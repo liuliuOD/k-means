@@ -1,7 +1,7 @@
 import numpy as np
 import random
 from kMeans import kMeans
-from visualize import visualize
+from modules.visualize import visualize
 
 color = ['r', 'g', 'b', 'y', 'm']
 centerColor = ['black', 'brown', 'gray', 'green', 'cyan']
