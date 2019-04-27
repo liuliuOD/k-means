@@ -18,9 +18,7 @@ test.initGroupCenters((1.0, 10.0), dimensions)
 
 drawer.interactive()
 for i in range(iterate) :
-    test.cluster()
-    test.updateCenters()
-    drawer.clearWindow()
+    test.cluster().updateCenters()
 
     for j in range(centerNum) :
         tmp = np.array(test.groups[j])
@@ -33,4 +31,4 @@ for i in range(iterate) :
     if test.evaluation() :
         break
 
-    drawer.draw().pause(0.5)
+    drawer.draw().pause(0.5).clearWindow()
