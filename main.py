@@ -9,7 +9,7 @@ centerShape = ['1', 'x', 6, '1', 'x']
 centerNum = 5
 dimensions = 2
 dataNum = 10000
-iterate = 100
+iterate = 1000
 
 data = [[random.uniform(1, 10) for i in range(dimensions)] for j in range(dataNum)]
 test = kMeans(data, centerNum)
@@ -31,4 +31,4 @@ for i in range(iterate) :
     if test.evaluation() :
         break
 
-    drawer.draw().pause(0.5).clearWindow()
+    drawer.draw().pause(0.1).clearWindow()
