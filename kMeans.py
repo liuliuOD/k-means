@@ -14,6 +14,8 @@ class kMeans () :
         self.groupNum = groupNum
         self.convergence = convergence
 
+        return self
+
     def initGroupCenters (self, rang, dimensions) :
         import random
         lower = rang[0]
