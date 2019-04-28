@@ -8,8 +8,16 @@ Using K-means, need to call functions named cluster and updateCenters.
 
 ## Running Example Showing By matplotlib :
 
-### Initial Center :
-![image](example/init.png)
+### Example 1 : (there are 5 centers)
+#### Initial Centers :
+![image](example/init01.png)
 
-### Final Result :
-![image](example/k-means.png)
+#### Final Result :
+![image](example/final01.png)
+
+### Example 2 : (there are 5 centers)
+#### Initial Centers :
+![image](example/init02.png)
+
+#### Final Result :
+![image](example/final02.png)
