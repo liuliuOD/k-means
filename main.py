@@ -28,7 +28,7 @@ for i in range(iterate) :
         tmp = test.groupCenters[r]
         drawer.scatter(tmp[0], tmp[1], color = centerColor[r], marker = centerShape[r], size = 200)
     
+    drawer.draw().pause(0.1).clearWindow()
+    
     if test.evaluation() :
         break
-
-    drawer.draw().pause(0.1).clearWindow()
