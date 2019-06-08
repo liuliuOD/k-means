@@ -23,7 +23,7 @@ class kMeans () :
 
         evaluation () :
             compare the difference between old centers and new centers,
-            if the difference less than this.convergence, it's time to stop k-means.
+            if the difference less than self.convergence, it's time to stop k-means.
 
     '''
     def __init__ (self, inputVec, groupNum, convergence = 0.001) :

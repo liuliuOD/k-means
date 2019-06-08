@@ -1,6 +1,24 @@
 import numpy as np
 import random
 class kMeansPP :
+    '''
+        initial values :
+            inputVecs (list) => all of your datas want to cluster.
+
+        chooseInitCenter () :
+            use random library to choose initial group centers from self.inputVecs.
+
+        euclideanDistance () :
+            use euclidean distance to calculate difference.
+
+        chooseNewCenter () :
+            choose next new group center.
+
+        run () :
+            centerNums => the number of groups you want to cluster.
+            use this class by call this function.
+
+    '''
     def __init__ (self, inputVecs) :
         self.inputs = inputVecs
         self.groupCenters = []
