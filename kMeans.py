@@ -1,5 +1,31 @@
 import numpy as np
 class kMeans () :
+    '''
+        initial values :
+            inputVec (list) => all of your datas want to cluster.
+            groupNum (number) => the number of groups you want to find.
+            convergence (float) => the minimum amount of difference you want to stop finding.
+
+        setParams () :
+            reset your initial values.
+
+        setCenters () :
+            set your initial group centers directly.
+
+        initGroupCenters () :
+            use random library to find initial group centers.
+
+        cluster () :
+            a loop of clustering.
+
+        updateCenters () :
+            update group centers after a loop of clustering.
+
+        evaluation () :
+            compare the difference between old centers and new centers,
+            if the difference less than this.convergence, it's time to stop k-means.
+
+    '''
     def __init__ (self, inputVec, groupNum, convergence = 0.001) :
         self.inputs = inputVec
         self.groupNum = groupNum
