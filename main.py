@@ -1,7 +1,9 @@
 import numpy as np
 import random
 from kMeans import kMeans
+from kMeansPP import kMeansPP
 from modules.visualize import visualize
+import numpy as np
 
 color = ['r', 'g', 'b', 'y', 'm']
 centerColor = ['black', 'brown', 'gray', 'green', 'cyan']
@@ -14,7 +16,10 @@ iterate = 1000
 data = [[random.uniform(1, 10) for i in range(dimensions)] for j in range(dataNum)]
 test = kMeans(data, centerNum)
 drawer = visualize()
-test.initGroupCenters((1.0, 10.0), dimensions)
+#test.initGroupCenters((1.0, 10.0), dimensions)
+kmpp = kMeansPP(data)
+
+test.setCenters(np.asarray(kmpp.run(centerNum)))
 
 drawer.interactive()
 for i in range(iterate) :
